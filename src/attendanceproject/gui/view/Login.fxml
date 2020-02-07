@@ -19,7 +19,7 @@
          <children>
             <ImageView fitHeight="58.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Downloads/unnamed.png" />
+                  <Image url="@../../../../assets/images/logo.png" />
                </image>
                <VBox.margin>
                   <Insets left="25.0" top="120.0" />
@@ -35,7 +35,7 @@
       <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="172.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-radius: 5px; -fx-border-color: #BEBFC1;">
          <children>
             <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="USER" size="1.2em" />
-            <TextField promptText="Username" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+            <TextField fx:id="usernameTxtField" promptText="Username" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
                </font>
@@ -48,7 +48,7 @@
       <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="224.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-radius: 5px; -fx-border-color: #BEBFC1;">
          <children>
             <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="LOCK" size="1.2em" />
-            <PasswordField promptText="Password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+            <PasswordField fx:id="passwordTxtField" promptText="Password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
                </font>
@@ -61,7 +61,7 @@
             <Insets left="10.0" />
          </padding>
       </HBox>
-      <Button layoutX="70.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FBBB2C#FBBB2C; -fx-background-radius: 5px;" text="LOGIN">
+      <Button fx:id="loginButton" layoutX="70.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FBBB2C#FBBB2C; -fx-background-radius: 5px;" text="LOGIN">
          <font>
             <Font name="Microsoft Sans Serif" size="14.0" />
          </font>
