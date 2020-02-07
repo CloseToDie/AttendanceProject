@@ -45,3 +45,5 @@ nbdist/
 *.properties
 *.xml
 nbproject/build-impl.xml
+*.properties
+nbproject/project.properties
