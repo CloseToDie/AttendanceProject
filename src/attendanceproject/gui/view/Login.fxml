@@ -34,7 +34,7 @@
       </Label>
       <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="172.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-radius: 5px; -fx-border-color: #BEBFC1;">
          <children>
-            <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="USER" size="1.2em" />
+            <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="USER" size="1.2em" text="" />
             <TextField fx:id="usernameTxtField" promptText="Username" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
@@ -47,7 +47,7 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="224.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-radius: 5px; -fx-border-color: #BEBFC1;">
          <children>
-            <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="LOCK" size="1.2em" />
+            <FontAwesomeIcon glyphStyle="-fx-fill:#BEBFC1" iconName="LOCK-ALT" size="1.2em" />
             <PasswordField fx:id="passwordTxtField" promptText="Password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
