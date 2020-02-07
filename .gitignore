@@ -38,3 +38,10 @@ nbdist/
 .nb-gradle/
 
 # End of https://www.gitignore.io/api/java,netbeans
+*.xml
+*.xml
+*.xml
+*.properties
+*.properties
+*.xml
+nbproject/build-impl.xml
