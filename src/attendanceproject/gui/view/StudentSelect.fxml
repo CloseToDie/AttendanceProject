@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceproject.gui.controller.StudentSelectController">
+   <top>
+      <VBox alignment="CENTER_LEFT" prefHeight="177.0" prefWidth="1920.0" styleClass="bannerClass" stylesheets="@css/app.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true" translateX="100.0">
+               <image>
+                  <Image url="@../../resources/img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
