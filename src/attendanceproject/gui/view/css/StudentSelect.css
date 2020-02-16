@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.radioButton .radio {
+    -fx-border-color: #707070;
+    -fx-border-radius: 100%;
+    -fx-background-color: #FFF;
+}
+
+.radioButton .radio:selected{
+    -fx-background-color : #FBBB2C;
+}
+
+.radioButton .dot {
+    -fx-mark-highlight-color: #FBBB2C ;
+    -fx-mark-color: #FBBB2C;
+    -fx-border-radius: 100%;
+}
