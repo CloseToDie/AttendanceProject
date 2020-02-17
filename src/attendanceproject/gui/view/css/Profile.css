@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17. feb. 2020, 20.25.56
+    Author     : kacpe
+*/
+
+/**
+ This css is responsible for styling the profile view.
+*/
+
+/**
+Here I will style the edit button to have no background and to have bold text
+*/
+
+#editProfileButton
+{
+    -fx-background-color: #FFF;
+    -fx-font-weight: bold;
+}
+
+/**
+Here I make the anchorpane white since the defualt grey color does not match the prototype.
+*/
+
+#AnchorPane
+{
+    -fx-background-color: #FFF;
+}

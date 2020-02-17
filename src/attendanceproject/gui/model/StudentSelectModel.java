@@ -9,6 +9,6 @@ package attendanceproject.gui.model;
  *
  * @author andreasvillumsen
  */
-public class AppModel {
+public class StudentSelectModel {
     
 }
