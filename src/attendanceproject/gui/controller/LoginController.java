@@ -5,14 +5,26 @@
  */
 package attendanceproject.gui.controller;
 
+import attendanceproject.gui.controller.calendar.CalendarController;
+import attendanceproject.gui.controller.calendar.FullCalendarView;
+import java.io.IOException;
 import java.net.URL;
+import java.time.YearMonth;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.application.Application;
+
 
 /**
  * FXML Controller class
@@ -38,6 +50,22 @@ public class LoginController implements Initializable {
 
     @FXML
     private void handleLogin(ActionEvent event) {
+        
+        
+        try {
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
+            
+            Stage stage = new Stage();
+            stage.setTitle("Full Calendar FXML Example");
+            stage.setScene(new Scene(loader.load()));
+            stage.setAlwaysOnTop(true);
+        CalendarController controller = loader.getController();
+        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
+            
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
