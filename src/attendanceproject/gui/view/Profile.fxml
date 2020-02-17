@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="806.0" prefWidth="327.0" stylesheets="@css/Profile.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane id="AnchorPane" prefHeight="806.0" prefWidth="327.0" stylesheets="@css/Profile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceproject.gui.controller.ProfileController">
    <children>
       <Label layoutX="119.0" layoutY="43.0" text="defualt user name">
          <font>
@@ -60,7 +59,7 @@
             <Font name="Microsoft Sans Serif" size="12.0" />
          </font>
       </Button>
-      <ImageView fitHeight="66.0" fitWidth="74.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="ProfileImageDisplay" fitHeight="66.0" fitWidth="74.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/img/profile-image.png" />
          </image>
