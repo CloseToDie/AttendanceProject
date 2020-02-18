@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 
 
+
 /**
  * FXML Controller class
  *
@@ -22,7 +23,8 @@ import javafx.scene.image.ImageView;
  */
 public class ProfileController implements Initializable
 {
-    private TemplateController tempcon;
+  
+   
     
 
     @FXML
@@ -36,17 +38,17 @@ public class ProfileController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        // TODO
+        
+         
     }    
 
     @FXML
     private void handleProfileEditAction(ActionEvent event) throws IOException
     {
-       tempcon.setEditProfile();
+       
     }
     
-     public void setTemplateController(TemplateController templateController) {
-        tempcon = templateController;
-    }
+    
+  
     
 }
