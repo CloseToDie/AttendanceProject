@@ -39,3 +39,13 @@ Here I make the anchorpane white since the defualt grey color does not match the
 {
     -fx-text-fill: #707070;
 }
+
+.column
+{
+    -fx-background-color: #FBBB2C;
+}
+
+.biglabel
+{
+    
+}
