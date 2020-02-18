@@ -12,8 +12,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-
 
 
 /**
@@ -21,16 +21,28 @@ import javafx.scene.image.ImageView;
  *
  * @author kacpe
  */
-public class ProfileController implements Initializable
+public class EditProfileController implements Initializable
 {
-  
    
-    
 
     @FXML
     private ImageView ProfileImageDisplay;
     @FXML
-    private Button editYourProfileButton;
+    private TextField usernameTxtField1;
+    @FXML
+    private TextField usernameTxtField11;
+    @FXML
+    private TextField usernameTxtField111;
+    @FXML
+    private TextField usernameTxtField112;
+    @FXML
+    private TextField usernameTxtField113;
+    @FXML
+    private TextField usernameTxtField1131;
+    @FXML
+    private Button saveButton;
+
+   
 
     /**
      * Initializes the controller class.
@@ -38,17 +50,16 @@ public class ProfileController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        
-         
+        // TODO
     }    
 
     @FXML
-    private void handleProfileEditAction(ActionEvent event) throws IOException
+    private void handleSaveAction(ActionEvent event) throws IOException
     {
-       
+      
+        
     }
     
-    
-  
+ 
     
 }
