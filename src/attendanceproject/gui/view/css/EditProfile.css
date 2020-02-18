@@ -12,15 +12,7 @@ and open the template in the editor.
  This css is responsible for styling the profile view.
 */
 
-/**
-Here I will style the edit button to have no background and to have bold text
-*/
 
-#editProfileButton
-{
-    -fx-background-color: #FFF;
-    -fx-font-weight: bold;
-}
 
 /**
 Here I make the anchorpane white since the defualt grey color does not match the prototype.

@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="806.0" prefWidth="327.0" stylesheets="@css/Profile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceproject.gui.controller.ProfileController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="200.0" stylesheets="@css/Profile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceproject.gui.controller.ProfileController">
    <children>
-      <Label layoutX="119.0" layoutY="43.0" text="defualt user name">
+      <Label layoutX="92.0" layoutY="47.0" text="defualt user name">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
@@ -54,20 +54,30 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Button id="editProfileButton" layoutX="164.0" layoutY="756.0" mnemonicParsing="false" stylesheets="@css/Profile.css" text="Edit your profile info">
+      <Button id="editProfileButton" fx:id="editYourProfileButton" ellipsisString="" layoutX="164.0" layoutY="458.0" mnemonicParsing="false" onAction="#handleProfileEditAction" prefHeight="20.0" prefWidth="122.0" stylesheets="@css/Profile.css" text="Edit your profile">
          <font>
             <Font name="Microsoft Sans Serif" size="12.0" />
          </font>
       </Button>
-      <ImageView fx:id="ProfileImageDisplay" fitHeight="66.0" fitWidth="74.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="ProfileImageDisplay" fitHeight="66.0" fitWidth="74.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/img/profile-image.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="298.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="272.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/img/user-edit-solid.png" />
          </image>
       </ImageView>
+      <Label layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="defualt postcode">
+         <font>
+            <Font name="Microsoft Sans Serif" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default city">
+         <font>
+            <Font name="Microsoft Sans Serif" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
