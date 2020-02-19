@@ -7,7 +7,7 @@ package attendanceproject.gui.model;
 
 /**
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class LoginModel {
     

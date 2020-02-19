@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class AttendanceProject extends Application {
     
@@ -33,7 +33,7 @@ public class AttendanceProject extends Application {
          Parent root = FXMLLoader.load(getClass().getResource("gui/view/Login.fxml"));
         Scene scene = new Scene(root);
         
-        //System.out.println(scene.getStylesheets() + "shit");
+        //System.out.println(scene.getStylesheets() + " OK");
         
         stage.setScene(scene);
         stage.setResizable(false);
@@ -47,7 +47,7 @@ public class AttendanceProject extends Application {
         primaryStage.setTitle("Calendar");
         Scene scene = new Scene(loader.load());
         scene.getStylesheets().add(getClass().getResource("/attendanceproject/gui/view/css/Calendarstyle.css").toExternalForm());
-        System.out.println(scene.getStylesheets() + "stylesheetstuff");  
+        System.out.println(scene.getStylesheets() + " stylesheet");  
         primaryStage.setScene((scene));
         // Get the controller and add the calendar view to it
         

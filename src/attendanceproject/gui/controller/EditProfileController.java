@@ -19,7 +19,7 @@ import javafx.scene.image.ImageView;
 /**
  * FXML Controller class
  *
- * @author kacpe
+ * @author Aluminuminum
  */
 public class EditProfileController implements Initializable
 {

@@ -29,7 +29,7 @@ import javafx.application.Application;
 /**
  * FXML Controller class
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class LoginController implements Initializable {
 

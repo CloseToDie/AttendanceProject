@@ -9,12 +9,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="200.0" stylesheets="@css/Profile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceproject.gui.controller.ProfileController">
    <children>
-      <Label layoutX="92.0" layoutY="47.0" text="defualt user name">
+      <Label layoutX="92.0" layoutY="47.0" text="Default user name">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="135.0" text="defualt username">
+      <Label layoutX="14.0" layoutY="135.0" text="Default username">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -24,7 +24,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="235.0" text="defualt full name">
+      <Label layoutX="14.0" layoutY="235.0" text="Default full name">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="335.0" prefWidth="114.0" text="defualt addres">
+      <Label layoutX="14.0" layoutY="335.0" prefHeight="22.0" prefWidth="122.0" text="Default addres">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -44,7 +44,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="435.0" text="default email:">
+      <Label layoutX="14.0" layoutY="435.0" text="Default email:">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -69,12 +69,12 @@
             <Image url="@../../resources/img/user-edit-solid.png" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="defualt postcode">
+      <Label layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="Default postcode">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default city">
+      <Label layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="Default city">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
