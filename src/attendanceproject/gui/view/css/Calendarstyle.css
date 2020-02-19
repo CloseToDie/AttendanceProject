@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17. feb. 2020, 09.29.33
+    Author     : anton
+*/
+
+#daylables{
+    
+     -fx-background-color: #FBBB2C;
+    -fx-border-color: #707070;
+    -fx-border-width: 2 ; 
+    -fx-font-size: 26
+    
+    
+    
+}
+
+#calendargrid{
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+   -fx-background-color: #FFFFFF;
+   -fx-font-size: 19
+    
+    
+    
+    
+    
+}
+
+#calendarviewVBox{
+    
+    -fx-background-color: #FFFFFF;
+    
+    
+    
+    
+}
+
+#titleBar{
+     -fx-font-family: 'Helvetica', Arial, sans-serif;
+      -fx-font-size: 26
+    
+    
+    
+    
+    
+    
+    
+}
+

@@ -54,15 +54,23 @@ public class LoginController implements Initializable {
         
         try {
            FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
-            
-            Stage stage = new Stage();
-            stage.setTitle("Full Calendar FXML Example");
-            stage.setScene(new Scene(loader.load()));
-            stage.setAlwaysOnTop(true);
+           
+           Stage  primaryStage = new Stage();
+           
+        primaryStage.setTitle("Calendar");
+        Scene scene = new Scene(loader.load());
+        scene.getStylesheets().add(getClass().getResource("/attendanceproject/gui/view/css/Calendarstyle.css").toExternalForm());
+        System.out.println(scene.getStylesheets() + "stylesheetstuff");  
+        primaryStage.setScene((scene));
+        // Get the controller and add the calendar view to it
+        
         CalendarController controller = loader.getController();
         controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
-            
-            stage.show();
+        
+        primaryStage.setHeight(415);
+        primaryStage.setWidth(393);
+        primaryStage.setResizable(false);
+        primaryStage.show();
         } catch (IOException ex) {
             Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
         }
