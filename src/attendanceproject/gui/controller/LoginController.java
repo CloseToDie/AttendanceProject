@@ -49,31 +49,42 @@ public class LoginController implements Initializable {
     }    
 
     @FXML
-    private void handleLogin(ActionEvent event) {
+    private void handleLogin(ActionEvent event) throws IOException {
         
+        String txt = usernameTxtField.getText();
         
-        try {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
-           
-           Stage  primaryStage = new Stage();
-           
-        primaryStage.setTitle("Calendar");
-        Scene scene = new Scene(loader.load());
-        scene.getStylesheets().add(getClass().getResource("/attendanceproject/gui/view/css/Calendarstyle.css").toExternalForm());
-        System.out.println(scene.getStylesheets() + "stylesheets");  
-        primaryStage.setScene((scene));
-        // Get the controller and add the calendar view to it
-        
-        CalendarController controller = loader.getController();
-        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
-        
-        primaryStage.setHeight(415);
-        primaryStage.setWidth(393);
-        primaryStage.setResizable(false);
-        primaryStage.show();
-        } catch (IOException ex) {
-            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+        if (txt.equals("Teacher"))
+        {
+            Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/TeacherViewProfile.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show(); 
+            close();
+        }
+        else if (txt.equals("Student"))
+        {
+            Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/StudentViewProfile.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show(); 
+            close();
+        }
+        else if (txt.isEmpty())
+        {
+            System.out.println("Write something");
         }
     }
+    
+     private void close()
+    {
+         Stage stage = (Stage) usernameTxtField.getScene().getWindow();
+         stage.close();
+    }
+
+    
     
 }

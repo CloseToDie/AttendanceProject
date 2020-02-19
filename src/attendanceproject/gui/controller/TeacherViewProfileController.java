@@ -38,7 +38,7 @@ import javafx.stage.Stage;
  *
  * @author Aluminuminum
  */
-public class StudentViewProfileController implements Initializable {
+public class TeacherViewProfileController implements Initializable {
     
     
     
@@ -51,8 +51,6 @@ public class StudentViewProfileController implements Initializable {
     private Button editYourProfileButton;
     @FXML
     private TableView<?> classTable;
-    @FXML
-    private BorderPane chartsBorderPane;
     @FXML
     private Label currentDateLabel;
     @FXML
@@ -68,41 +66,16 @@ public class StudentViewProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-       chartsBorderPane.setCenter(buildBarCHart());
+       
     }    
     
-    private BarChart buildBarCHart()
-    {
-         CategoryAxis xAxis = new CategoryAxis();
-        xAxis.setLabel("Weekdays");
-        
-        NumberAxis yAxis = new NumberAxis();
-        yAxis.setLabel("Absence");
-        
-        BarChart barChart = new BarChart(xAxis, yAxis);
-        
-        XYChart.Series data = new XYChart.Series();
-        data.setName("Absence per weekday");
-        
-        //provide data 
-        data.getData().add(new XYChart.Data("mondays", 10));
-        data.getData().add(new XYChart.Data("tuesdays", 25));
-        data.getData().add(new XYChart.Data("wednesdays", 2));
-        data.getData().add(new XYChart.Data("thursdays", 8));
-        data.getData().add(new XYChart.Data("fridays", 6));
-        
-        barChart.getData().add(data);
-        barChart.setLegendVisible(false);
-        
-        return barChart;
-        
-    }
+    
 
     @FXML
     private void handleEditButton(ActionEvent event) throws IOException
     {
        
-         Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/StudentViewEditProfile.fxml"));
+         Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/TeacherViewEditProfile.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);

@@ -25,13 +25,13 @@ public class AttendanceProject extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
-        Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewProfile.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewProfile.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewEditProfile.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentSelect.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Profile.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Template.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/EditProfile.fxml"));
-         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Login.fxml"));
+         Parent root = FXMLLoader.load(getClass().getResource("gui/view/Login.fxml"));
         Scene scene = new Scene(root);
         
         //System.out.println(scene.getStylesheets() + " OK");

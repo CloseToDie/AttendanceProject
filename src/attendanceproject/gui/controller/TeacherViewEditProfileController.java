@@ -5,9 +5,14 @@
  */
 package attendanceproject.gui.controller;
 
+import attendanceproject.gui.controller.calendar.CalendarController;
+import attendanceproject.gui.controller.calendar.FullCalendarView;
 import java.io.IOException;
 import java.net.URL;
+import java.time.YearMonth;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,7 +39,7 @@ import javafx.stage.Stage;
  *
  * @author andreasvillumsen
  */
-public class StudentViewEditProfile implements Initializable {
+public class TeacherViewEditProfileController implements Initializable {
     
     
     
@@ -45,8 +50,6 @@ public class StudentViewEditProfile implements Initializable {
     private ImageView ProfileImageDisplay;
     @FXML
     private TableView<?> classTable;
-    @FXML
-    private BorderPane chartsBorderPane;
     @FXML
     private TextField usernameTxtField1;
     @FXML
@@ -65,6 +68,8 @@ public class StudentViewEditProfile implements Initializable {
     private Label currentDateLabel;
     @FXML
     private ImageView calendarImage;
+    @FXML
+    private Label logoutButton;
 
     /**
      * Initializes the controller class.
@@ -74,40 +79,15 @@ public class StudentViewEditProfile implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-       chartsBorderPane.setCenter(buildBarCHart());
+       
     }    
     
-    private BarChart buildBarCHart()
-    {
-         CategoryAxis xAxis = new CategoryAxis();
-        xAxis.setLabel("Weekdays");
-        
-        NumberAxis yAxis = new NumberAxis();
-        yAxis.setLabel("Absence");
-        
-        BarChart barChart = new BarChart(xAxis, yAxis);
-        
-        XYChart.Series data = new XYChart.Series();
-        data.setName("Absence per weekday");
-        
-        //provide data 
-        data.getData().add(new XYChart.Data("mondays", 10));
-        data.getData().add(new XYChart.Data("tuesdays", 25));
-        data.getData().add(new XYChart.Data("wednesdays", 2));
-        data.getData().add(new XYChart.Data("thursdays", 8));
-        data.getData().add(new XYChart.Data("fridays", 6));
-        
-        barChart.getData().add(data);
-        barChart.setLegendVisible(false);
-        
-        return barChart;
-        
-    }
+    
 
     @FXML
     private void handleSaveAction(ActionEvent event) throws IOException
     {
-        Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/StudentViewProfile.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/TeacherViewProfile.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
@@ -125,6 +105,40 @@ public class StudentViewEditProfile implements Initializable {
     @FXML
     private void handleDatePicker(MouseEvent event)
     {
+         try {
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
+           
+           Stage  primaryStage = new Stage();
+           
+        primaryStage.setTitle("Calendar");
+        Scene scene = new Scene(loader.load());
+        scene.getStylesheets().add(getClass().getResource("/attendanceproject/gui/view/css/Calendarstyle.css").toExternalForm());
+        System.out.println(scene.getStylesheets() + "stylesheets");  
+        primaryStage.setScene((scene));
+        // Get the controller and add the calendar view to it
+        
+        CalendarController controller = loader.getController();
+        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
+        
+        primaryStage.setHeight(415);
+        primaryStage.setWidth(393);
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    private void handleLogout(MouseEvent event) throws IOException
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/Login.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show(); 
+        close();
     }
     
     
