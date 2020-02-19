@@ -15,7 +15,7 @@ import java.util.Properties;
 
 /**
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class MSSQLDatabaseConnector {
 
