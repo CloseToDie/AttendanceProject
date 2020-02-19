@@ -56,7 +56,7 @@ public class FullCalendarView {
         
         GridPane dayLabels = new GridPane();
        dayLabels.setId("daylables");
-        //System.out.println(dayLabels.getStyleClass() +"wtf");
+        //System.out.println(dayLabels.getStyleClass() +" Label");
        
         dayLabels.setPrefWidth(379);
         Integer col = 0;

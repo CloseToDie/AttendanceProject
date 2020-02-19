@@ -11,7 +11,7 @@ import javafx.fxml.Initializable;
 
 /**
  *
- * @author kacpe
+ * @author Aluminuminum
  */
 public class StudentSelectController implements Initializable
 {

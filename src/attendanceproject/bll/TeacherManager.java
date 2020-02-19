@@ -7,7 +7,7 @@ package attendanceproject.bll;
 
 /**
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class TeacherManager {
     

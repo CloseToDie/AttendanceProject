@@ -29,7 +29,7 @@ import javafx.application.Application;
 /**
  * FXML Controller class
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class LoginController implements Initializable {
 
@@ -60,7 +60,7 @@ public class LoginController implements Initializable {
         primaryStage.setTitle("Calendar");
         Scene scene = new Scene(loader.load());
         scene.getStylesheets().add(getClass().getResource("/attendanceproject/gui/view/css/Calendarstyle.css").toExternalForm());
-        System.out.println(scene.getStylesheets() + "stylesheetstuff");  
+        System.out.println(scene.getStylesheets() + "stylesheets");  
         primaryStage.setScene((scene));
         // Get the controller and add the calendar view to it
         

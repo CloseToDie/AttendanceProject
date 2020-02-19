@@ -7,7 +7,7 @@ package attendanceproject.be;
 
 /**
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class Teacher {
     
