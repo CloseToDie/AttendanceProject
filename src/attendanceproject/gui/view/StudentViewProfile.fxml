@@ -98,7 +98,7 @@
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-            <Button id="editProfileButton" fx:id="editYourProfileButton" layoutX="137.0" layoutY="457.0" mnemonicParsing="false" stylesheets="@css/StudentViewProfile.css" text="Edit your profile info" />
+            <Button id="editProfileButton" fx:id="editYourProfileButton" layoutX="137.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleEditButton" stylesheets="@css/StudentViewProfile.css" text="Edit your profile info" />
          </children></AnchorPane>
      
    </left>
@@ -112,12 +112,12 @@
                         <Font name="Arial" size="31.0" />
                      </font>
                   </Label>
-                  <Label id="CurrentDateLabel" layoutX="771.0" layoutY="26.0" text="21-02-2020">
+                  <Label id="CurrentDateLabel" fx:id="currentDateLabel" layoutX="771.0" layoutY="26.0" onMouseClicked="#handleDatePicker" text="21-02-2020">
                      <font>
                         <Font name="Arial" size="18.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="881.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="calendarImage" fitHeight="26.0" fitWidth="24.0" layoutX="881.0" layoutY="24.0" onMouseClicked="#handleDatePicker" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/img/calendar-alt-solid.png" />
                      </image>

@@ -24,13 +24,14 @@ public class AttendanceProject extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        /*
-        //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewProfile.fxml"));
+        
+        Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewProfile.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentViewEditProfile.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/StudentSelect.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Profile.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Template.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/EditProfile.fxml"));
-         Parent root = FXMLLoader.load(getClass().getResource("gui/view/Login.fxml"));
+         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/Login.fxml"));
         Scene scene = new Scene(root);
         
         //System.out.println(scene.getStylesheets() + "shit");
@@ -38,9 +39,9 @@ public class AttendanceProject extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        */
         
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
+        
+       /* FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
            
            Stage  primaryStage = new Stage();
            
@@ -57,7 +58,7 @@ public class AttendanceProject extends Application {
         primaryStage.setHeight(415);
         primaryStage.setWidth(393);
         primaryStage.setResizable(false);
-        primaryStage.show();
+        primaryStage.show();*/
     }
 
     /**

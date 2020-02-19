@@ -1,0 +1,68 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+/**
+Here I will style the edit button to have no background and to have bold text
+*/
+
+#BorderPane
+{
+    -fx-background-color: #FFF;
+}
+#editProfileButton
+{
+    -fx-background-color: #FFF;
+    -fx-font-weight: bold;
+}
+
+/**
+Here I make the anchorpane white since the defualt grey color does not match the prototype.
+*/
+
+.AnchorPane
+{
+    -fx-background-color: #FFF;
+    -fx-effect:dropshadow(three-pass-box,gray, 10, 0, 0, 0);
+}
+
+#YourAttendanceLabel
+{
+    -fx-text-fill: #707070;
+}
+
+#CurrentDateLabel
+{
+    -fx-text-fill: #707070;
+}
+
+.column
+{
+    -fx-background-color: #FBBB2C;
+}
+
+.biglabel
+{
+    
+}
+
+.HBox
+{
+    -fx-border-radius: 5px;
+    -fx-border-color: #BEBFC1;
+}
+
+.TextField
+{
+    -fx-background-color:  transparent;
+}
+
+.Button
+{
+    -fx-background-color:  #FBBB2C#FBBB2C;
+    -fx-background-radius:  5px;
+}

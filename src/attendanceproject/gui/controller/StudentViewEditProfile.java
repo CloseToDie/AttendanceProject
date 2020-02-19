@@ -21,6 +21,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -33,7 +34,7 @@ import javafx.stage.Stage;
  *
  * @author andreasvillumsen
  */
-public class StudentViewProfileController implements Initializable {
+public class StudentViewEditProfile implements Initializable {
     
     
     
@@ -43,11 +44,23 @@ public class StudentViewProfileController implements Initializable {
     @FXML
     private ImageView ProfileImageDisplay;
     @FXML
-    private Button editYourProfileButton;
-    @FXML
     private TableView<?> classTable;
     @FXML
     private BorderPane chartsBorderPane;
+    @FXML
+    private TextField usernameTxtField1;
+    @FXML
+    private TextField usernameTxtField11;
+    @FXML
+    private TextField usernameTxtField111;
+    @FXML
+    private TextField usernameTxtField112;
+    @FXML
+    private TextField usernameTxtField1121;
+    @FXML
+    private TextField usernameTxtField113;
+    @FXML
+    private Button saveButton;
     @FXML
     private Label currentDateLabel;
     @FXML
@@ -92,10 +105,9 @@ public class StudentViewProfileController implements Initializable {
     }
 
     @FXML
-    private void handleEditButton(ActionEvent event) throws IOException
+    private void handleSaveAction(ActionEvent event) throws IOException
     {
-       
-         Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/StudentViewEditProfile.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/StudentViewProfile.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
@@ -114,8 +126,6 @@ public class StudentViewProfileController implements Initializable {
     private void handleDatePicker(MouseEvent event)
     {
     }
-    
-    
     
     
     
