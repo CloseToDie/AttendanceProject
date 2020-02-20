@@ -5,6 +5,7 @@
  */
 package attendanceproject.gui.controller;
 
+import attendanceproject.be.Student;
 import attendanceproject.gui.controller.calendar.CalendarController;
 import attendanceproject.gui.controller.calendar.FullCalendarView;
 import attendanceproject.gui.model.AppModel;
@@ -26,8 +27,10 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -50,8 +53,6 @@ public class TeacherViewEditProfileController implements Initializable {
     @FXML
     private ImageView ProfileImageDisplay;
     @FXML
-    private TableView<?> classTable;
-    @FXML
     private TextField usernameTxtField1;
     @FXML
     private TextField usernameTxtField11;
@@ -71,6 +72,14 @@ public class TeacherViewEditProfileController implements Initializable {
     private ImageView calendarImage;
     @FXML
     private Label logoutButton;
+    @FXML
+    private TableView<Student> studentTable;
+    @FXML
+    private TableColumn<Student, String> userNameCol;
+    @FXML
+    private TableColumn<Student, String> fullNameCol;
+    @FXML
+    private TableColumn<Student, String> absenceCol;
 
     /**
      * Initializes the controller class.
@@ -80,7 +89,26 @@ public class TeacherViewEditProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-       
+       userNameCol.setCellValueFactory(
+            new PropertyValueFactory<Student, String>("userName")
+        );
+        
+        fullNameCol.setCellValueFactory(
+            new PropertyValueFactory<Student, String>("fullName")
+        );
+        
+        absenceCol.setCellValueFactory(
+            new PropertyValueFactory<Student, String>("absence")
+        );
+        
+        try
+        {
+            appmodel = new AppModel();
+            studentTable.setItems(appmodel.getAllStudents());
+        } catch (Exception ex)
+        {
+            Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }    
     
     

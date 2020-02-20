@@ -203,9 +203,9 @@
                <children>
                   <TableView fx:id="classTable" layoutX="11.0" layoutY="6.0" prefHeight="382.0" prefWidth="535.0" styleClass="TableView">
                     <columns>
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Class" />
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Time" />
-                        <TableColumn prefWidth="75.0" styleClass="column" text="Status" />
+                      <TableColumn fx:id="classCol" prefWidth="75.0" styleClass="column" text="Class" />
+                      <TableColumn fx:id="timeCol" prefWidth="75.0" styleClass="column" text="Time" />
+                        <TableColumn fx:id="statusCol" prefWidth="75.0" styleClass="column" text="Status" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

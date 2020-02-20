@@ -5,6 +5,7 @@
  */
 package attendanceproject.gui.controller;
 
+import attendanceproject.be.Klasse;
 import attendanceproject.gui.controller.calendar.CalendarController;
 import attendanceproject.gui.controller.calendar.FullCalendarView;
 import attendanceproject.gui.model.AppModel;
@@ -26,8 +27,10 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -50,7 +53,7 @@ public class StudentViewEditProfileController implements Initializable {
     @FXML
     private ImageView ProfileImageDisplay;
     @FXML
-    private TableView<?> classTable;
+    private TableView<Klasse> classTable;
     @FXML
     private BorderPane chartsBorderPane;
     @FXML
@@ -73,6 +76,12 @@ public class StudentViewEditProfileController implements Initializable {
     private ImageView calendarImage;
     @FXML
     private Label logoutButton;
+    @FXML
+    private TableColumn<Klasse, String> classCol;
+    @FXML
+    private TableColumn<Klasse, String> timeCol;
+    @FXML
+    private TableColumn<Klasse, String> statusCol;
 
     /**
      * Initializes the controller class.
@@ -82,6 +91,26 @@ public class StudentViewEditProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
+        classCol.setCellValueFactory(
+            new PropertyValueFactory<Klasse, String>("className")
+        );
+        
+        timeCol.setCellValueFactory(
+            new PropertyValueFactory<Klasse, String>("time")
+        );
+        
+        statusCol.setCellValueFactory(
+            new PropertyValueFactory<Klasse, String>("status")
+        );
+        
+        try
+        {
+            appmodel = new AppModel();
+            classTable.setItems(appmodel.getAllClasses());
+        } catch (Exception ex)
+        {
+            Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
+        }
        chartsBorderPane.setCenter(buildBarCHart());
     }    
     

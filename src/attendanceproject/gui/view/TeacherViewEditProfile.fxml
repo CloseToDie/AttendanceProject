@@ -201,14 +201,11 @@
             </AnchorPane>
             <AnchorPane prefHeight="389.0" prefWidth="633.0" styleClass="AnchorPane">
                <children>
-                  <TableView fx:id="classTable" layoutX="11.0" layoutY="6.0" prefHeight="382.0" prefWidth="758.0" styleClass="TableView">
+                  <TableView fx:id="studentTable" layoutX="11.0" layoutY="6.0" prefHeight="382.0" prefWidth="758.0" styleClass="TableView">
                     <columns>
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Username" />
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Full name" />
-                        <TableColumn prefWidth="75.0" styleClass="column" text="Addres" />
-                        <TableColumn prefWidth="75.0" styleClass="column" text="Email" />
-                        <TableColumn prefWidth="75.0" styleClass="column" text="Class" />
-                        <TableColumn prefWidth="75.0" styleClass="column" text="Absence" />
+                      <TableColumn fx:id="userNameCol" prefWidth="75.0" styleClass="column" text="Username" />
+                      <TableColumn fx:id="fullNameCol" prefWidth="75.0" styleClass="column" text="Full name" />
+                        <TableColumn fx:id="absenceCol" prefWidth="75.0" styleClass="column" text="Absence" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
