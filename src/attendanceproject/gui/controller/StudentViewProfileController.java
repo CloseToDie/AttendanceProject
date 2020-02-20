@@ -147,6 +147,7 @@ public class StudentViewProfileController implements Initializable {
     @FXML
     private void handleLogout(MouseEvent event) throws IOException
     {
+        System.out.println("logout");
         Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/Login.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
