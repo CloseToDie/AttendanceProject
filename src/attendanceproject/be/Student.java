@@ -9,6 +9,7 @@ package attendanceproject.be;
  *
  * @author Aluminuminum
  */
-public class Student {
+public class Student extends Person
+{
     
 }
