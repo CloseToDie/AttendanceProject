@@ -12,4 +12,9 @@ package attendanceproject.be;
 public class Student extends Person
 {
     
+    public Student(int id, String userName, String fullName, String addres, String postCode, String city, String email)
+    {
+        super(id, userName, fullName, addres, postCode, city, email);
+    }
+    
 }
