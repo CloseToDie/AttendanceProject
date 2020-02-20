@@ -52,10 +52,6 @@ public class TeacherViewProfileController implements Initializable {
     @FXML
     private TableView<?> classTable;
     @FXML
-    private Label currentDateLabel;
-    @FXML
-    private ImageView calendarImage;
-    @FXML
     private Label logoutButton;
 
     /**
@@ -90,7 +86,6 @@ public class TeacherViewProfileController implements Initializable {
          stage.close();
     }
 
-    @FXML
     private void handleDatePicker(MouseEvent event)
     {
          try {
