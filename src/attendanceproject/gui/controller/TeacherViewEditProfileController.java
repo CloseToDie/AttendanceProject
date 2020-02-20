@@ -7,6 +7,7 @@ package attendanceproject.gui.controller;
 
 import attendanceproject.gui.controller.calendar.CalendarController;
 import attendanceproject.gui.controller.calendar.FullCalendarView;
+import attendanceproject.gui.model.AppModel;
 import java.io.IOException;
 import java.net.URL;
 import java.time.YearMonth;
@@ -42,7 +43,7 @@ import javafx.stage.Stage;
 public class TeacherViewEditProfileController implements Initializable {
     
     
-    
+    private AppModel appmodel;
 
     @FXML
     private BorderPane BorderPane;

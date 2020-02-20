@@ -83,6 +83,7 @@ public class LoginController implements Initializable {
     {
          Stage stage = (Stage) usernameTxtField.getScene().getWindow();
          stage.close();
+         
     }
 
     

@@ -118,8 +118,8 @@
                <children>
                   <TableView id="TableViewStudents" fx:id="classTable" layoutX="27.0" layoutY="19.0" prefHeight="652.0" prefWidth="1384.0" style="-fx-border-color: #FFFFFF;" styleClass="TableView">
                     <columns>
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Username" />
-                      <TableColumn prefWidth="75.0" styleClass="column" text="Full name" />
+                      <TableColumn fx:id="userNameCol" prefWidth="75.0" styleClass="column" text="Username" />
+                      <TableColumn fx:id="fullNameCol" prefWidth="75.0" styleClass="column" text="Full name" />
                         <TableColumn prefWidth="75.0" styleClass="column" text="Addres" />
                         <TableColumn prefWidth="75.0" styleClass="column" text="Email" />
                         <TableColumn prefWidth="75.0" styleClass="column" text="Class" />
