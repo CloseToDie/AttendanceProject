@@ -9,6 +9,12 @@ package attendanceproject.be;
  *
  * @author Aluminuminum
  */
-public class Teacher {
+public class Teacher extends Person
+{
+    
+    public Teacher(int id, String userName, String fullName, String addres, String postCode, String city, String email)
+    {
+        super(id, userName, fullName, addres, postCode, city, email);
+    }
     
 }
