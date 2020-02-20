@@ -83,7 +83,7 @@
             <Image url="@../../resources/img/profile-image.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="255.0" layoutY="729.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="279.0" layoutY="767.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/img/user-edit-solid.png" />
          </image>
@@ -98,7 +98,7 @@
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-            <Button id="editProfileButton" fx:id="editYourProfileButton" layoutX="112.0" layoutY="729.0" mnemonicParsing="false" onAction="#handleEditButton" stylesheets="@css/StudentViewProfile.css" text="Edit your profile info" />
+            <Button id="editProfileButton" fx:id="editYourProfileButton" layoutX="136.0" layoutY="767.0" mnemonicParsing="false" onAction="#handleEditButton" stylesheets="@css/StudentViewProfile.css" text="Edit your profile info" />
          </children></AnchorPane>
      
    </left>
@@ -124,7 +124,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <BorderPane fx:id="chartsBorderPane" layoutX="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="850.0" translateY="160.0" />
+            <BorderPane fx:id="chartsBorderPane" layoutX="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="850.0" translateY="161.0" />
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="110.0" translateY="-360.0">
                <children>
                   <TableView id="TableViewStudents" fx:id="classTable" layoutX="60.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="578.0" styleClass="TableView">
