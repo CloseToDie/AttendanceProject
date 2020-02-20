@@ -7,6 +7,7 @@ package attendanceproject.gui.controller;
 
 import attendanceproject.gui.controller.calendar.CalendarController;
 import attendanceproject.gui.controller.calendar.FullCalendarView;
+import attendanceproject.gui.model.AppModel;
 import java.io.IOException;
 import java.net.URL;
 import java.time.YearMonth;
@@ -26,6 +27,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -42,7 +44,7 @@ public class TeacherViewProfileController implements Initializable {
     
     
     
-
+    private AppModel appmodel;
     @FXML
     private BorderPane BorderPane;
     @FXML
@@ -62,7 +64,7 @@ public class TeacherViewProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-       
+      
     }    
     
     

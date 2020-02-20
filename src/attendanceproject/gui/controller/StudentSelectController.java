@@ -5,6 +5,7 @@
  */
 package attendanceproject.gui.controller;
 
+import attendanceproject.gui.model.AppModel;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
@@ -15,6 +16,7 @@ import javafx.fxml.Initializable;
  */
 public class StudentSelectController implements Initializable
 {
+    private AppModel appmodel;
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
