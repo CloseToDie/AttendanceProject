@@ -114,6 +114,8 @@ public class StudentViewEditProfileController implements Initializable {
             Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
         }
        chartsBorderPane.setCenter(buildBarCHart());
+       
+       totalAbsence.setText("20%");
     }    
     
     private BarChart buildBarCHart()
@@ -199,6 +201,14 @@ public class StudentViewEditProfileController implements Initializable {
         stage.setResizable(false);
         stage.show(); 
         close();
+    }
+    
+    public void setTotalAbsence(String absence){
+    
+        totalAbsence.setText(absence);
+    
+    
+    
     }
     
     

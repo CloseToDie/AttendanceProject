@@ -31,6 +31,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -156,8 +157,20 @@ public class TeacherViewProfileController implements Initializable {
         stage.show(); 
         close();
     }
+
+    @FXML
+    private void handleclickedonstudent(MouseEvent mouseEvent) {
+        
+        if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
+            if(mouseEvent.getClickCount() == 2){
+                System.out.println("Double clicked");
+            }
+        
+        
+        
+    }
     
-    
+    }
     
     
     
