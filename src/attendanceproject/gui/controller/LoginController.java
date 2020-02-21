@@ -53,7 +53,7 @@ public class LoginController implements Initializable {
         
         String txt = usernameTxtField.getText();
         
-        if (txt.equals("Teacher"))
+        if (txt.equals("Teacher") )
         {
             Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/TeacherViewProfile.fxml"));
             Scene scene = new Scene(root);

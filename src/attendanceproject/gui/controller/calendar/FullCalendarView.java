@@ -1,5 +1,6 @@
 package attendanceproject.gui.controller.calendar;
 
+import attendanceproject.gui.model.AppModel;
 import java.awt.Image;
 import java.awt.Rectangle;
 import javafx.geometry.Pos;
@@ -26,13 +27,15 @@ public class FullCalendarView {
     private VBox view;
     private Text calendarTitle;
     private YearMonth currentYearMonth;
+    private AppModel appModel;
 
     /**
      * Create a calendar view
      * @param yearMonth year month to create the calendar of
      */
-    public FullCalendarView(YearMonth yearMonth) {
+    public FullCalendarView(YearMonth yearMonth, AppModel apModel) {
         currentYearMonth = yearMonth;
+        this.appModel = apModel;
         // Create the calendar grid pane
         GridPane calendar = new GridPane();
         calendar.setId("calendargrid");
@@ -42,7 +45,7 @@ public class FullCalendarView {
         // Create rows and columns with anchor panes for the calendar
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 7; j++) {
-                AnchorPaneNode ap = new AnchorPaneNode(this);
+                AnchorPaneNode ap = new AnchorPaneNode(this,appModel);
                 ap.setPrefSize(56,56);
                 calendar.add(ap,j,i);
                 allCalendarDays.add(ap);
