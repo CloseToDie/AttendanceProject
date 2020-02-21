@@ -76,6 +76,8 @@ public class TeacherViewEditProfileController implements Initializable {
     private TableColumn<Student, String> fullNameCol;
     @FXML
     private TableColumn<Student, String> absenceCol;
+    @FXML
+    private Label headerUserNameLabel;
 
     /**
      * Initializes the controller class.
@@ -101,6 +103,8 @@ public class TeacherViewEditProfileController implements Initializable {
         {
             appmodel = new AppModel();
             studentTable.setItems(appmodel.getAllStudents());
+            
+            
         } catch (Exception ex)
         {
             Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);

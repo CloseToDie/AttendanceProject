@@ -35,6 +35,7 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 
@@ -66,6 +67,18 @@ public class TeacherViewProfileController implements Initializable {
     private TableColumn<Student, String> absenceCol;
     @FXML
     private Label headerUserNameLabel;
+    @FXML
+    private Label fullNameLabel;
+    @FXML
+    private Label userNameLabel;
+    @FXML
+    private Label addresLabel;
+    @FXML
+    private Label cityLabel;
+    @FXML
+    private Label postCodeLabel;
+    @FXML
+    private Label emailLabel;
 
     /**
      * Initializes the controller class.
@@ -91,6 +104,13 @@ public class TeacherViewProfileController implements Initializable {
         {
             appmodel = new AppModel();
             studentTable.setItems(appmodel.getAllStudents());
+            headerUserNameLabel.setText(appmodel.getAllStudents().get(0).getUserName());
+            fullNameLabel.setText(appmodel.getAllStudents().get(0).getFullName());
+            userNameLabel.setText(appmodel.getAllStudents().get(0).getUserName());
+            addresLabel.setText(appmodel.getAllStudents().get(0).getAddres());
+            cityLabel.setText(appmodel.getAllStudents().get(0).getCity());
+            postCodeLabel.setText(appmodel.getAllStudents().get(0).getPostCode());
+            emailLabel.setText(appmodel.getAllStudents().get(0).getEmail());
         } catch (Exception ex)
         {
             Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);

@@ -38,7 +38,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="135.0" text="default username">
+      <Label fx:id="userNameLabel" layoutX="14.0" layoutY="135.0" text="default username">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -48,7 +48,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="235.0" text="default full name">
+      <Label fx:id="fullNameLabel" layoutX="14.0" layoutY="235.0" text="default full name">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="335.0" prefWidth="114.0" text="default addres">
+      <Label fx:id="addresLabel" layoutX="14.0" layoutY="335.0" prefWidth="114.0" text="default addres">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -68,7 +68,7 @@
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="435.0" text="default email:">
+      <Label fx:id="emailLabel" layoutX="14.0" layoutY="435.0" text="default email:">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
@@ -88,12 +88,12 @@
             <Image url="@../../resources/img/user-edit-solid.png" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default postcode">
+      <Label fx:id="postCodeLabel" layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default postcode">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default city">
+      <Label fx:id="cityLabel" layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default city">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
