@@ -186,7 +186,7 @@ public class StudentViewProfileController implements Initializable {
     private void handleDatePicker(MouseEvent event)
     {
          try {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/FullCalendar.fxml"));
            
            Stage  primaryStage = new Stage();
            
