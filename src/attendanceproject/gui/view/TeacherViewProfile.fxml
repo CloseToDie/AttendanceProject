@@ -116,11 +116,11 @@
             </AnchorPane>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1446.0" styleClass="AnchorPane" translateX="110.0" translateY="120.0">
                <children>
-                  <TableView id="TableViewStudents" fx:id="classTable" layoutX="19.0" layoutY="20.0" prefHeight="652.0" prefWidth="1384.0" styleClass="TableView">
+                  <TableView id="TableViewStudents" fx:id="studentTable" layoutX="19.0" layoutY="20.0" prefHeight="652.0" prefWidth="1384.0" styleClass="TableView">
                     <columns>
-                      <TableColumn  fx:id="userNameCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Username" />
-                      <TableColumn  fx:id="fullNameCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Full name" />
-                        <TableColumn  fx:id="absenceCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Absence" />
+                      <TableColumn fx:id="userNameCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Username" />
+                      <TableColumn fx:id="fullNameCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Full name" />
+                        <TableColumn fx:id="absenceCol" prefWidth="75.0" style="-fx-font-size: 19px;" styleClass="column" text="Absence" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

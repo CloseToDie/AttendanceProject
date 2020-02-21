@@ -13,6 +13,7 @@ import attendanceproject.gui.controller.StudentViewEditProfileController;
 import attendanceproject.gui.controller.StudentViewProfileController;
 import attendanceproject.gui.controller.TeacherViewEditProfileController;
 import attendanceproject.gui.controller.TeacherViewProfileController;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -31,6 +32,7 @@ public class AppModel
     private StudentViewEditProfileController StudViewEditProfileCon;
     private LoginController LoginCon;
     private StudentSelectController StudSelectCon;
+    
     
     public AppModel() throws Exception {
 

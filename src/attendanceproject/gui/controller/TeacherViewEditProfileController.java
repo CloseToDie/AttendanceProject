@@ -67,10 +67,6 @@ public class TeacherViewEditProfileController implements Initializable {
     @FXML
     private Button saveButton;
     @FXML
-    private Label currentDateLabel;
-    @FXML
-    private ImageView calendarImage;
-    @FXML
     private Label logoutButton;
     @FXML
     private TableView<Student> studentTable;
@@ -131,7 +127,6 @@ public class TeacherViewEditProfileController implements Initializable {
          stage.close();
     }
 
-    @FXML
     private void handleDatePicker(MouseEvent event)
     {
          try {
@@ -147,7 +142,7 @@ public class TeacherViewEditProfileController implements Initializable {
         // Get the controller and add the calendar view to it
         
         CalendarController controller = loader.getController();
-        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
+        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now(),appmodel).getView());
         
         primaryStage.setHeight(415);
         primaryStage.setWidth(393);

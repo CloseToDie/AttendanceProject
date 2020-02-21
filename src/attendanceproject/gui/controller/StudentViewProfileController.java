@@ -163,7 +163,7 @@ public class StudentViewProfileController implements Initializable {
         // Get the controller and add the calendar view to it
         
         CalendarController controller = loader.getController();
-        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now()).getView());
+        controller.calendarPane.getChildren().add(new FullCalendarView(YearMonth.now(),appmodel).getView());
         
         primaryStage.setHeight(415);
         primaryStage.setWidth(393);
