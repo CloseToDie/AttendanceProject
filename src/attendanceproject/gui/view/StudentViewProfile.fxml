@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -122,6 +123,12 @@
                         <Image url="@../../resources/img/calendar-alt-solid.png" />
                      </image>
                   </ImageView>
+                  <Label id="YourAttendanceLabel" layoutX="492.0" layoutY="14.0" text="total percentage of absence:">
+                     <font>
+                        <Font name="Arial" size="31.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalAbsence" layoutX="895.0" layoutY="15.0" prefHeight="35.0" prefWidth="149.0" />
                </children>
             </AnchorPane>
             <BorderPane fx:id="chartsBorderPane" layoutX="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="850.0" translateY="161.0" />
@@ -129,8 +136,8 @@
                <children>
                   <TableView id="TableViewStudents" fx:id="classTable" layoutX="60.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="578.0" styleClass="TableView">
                     <columns>
-                      <TableColumn  fx:id="classCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Class" />
-                      <TableColumn  fx:id="timeCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Time" />
+                      <TableColumn fx:id="classCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Class" />
+                      <TableColumn fx:id="timeCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Time" />
                         <TableColumn fx:id="statusCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Status" />
                     </columns>
                      <columnResizePolicy>

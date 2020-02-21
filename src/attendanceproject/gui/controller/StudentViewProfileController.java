@@ -29,6 +29,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -69,6 +70,8 @@ public class StudentViewProfileController implements Initializable {
     private TableColumn<Klasse, String> timeCol;
     @FXML
     private TableColumn<Klasse, String> statusCol;
+    @FXML
+    private TextField totalAbsence;
 
     /**
      * Initializes the controller class.

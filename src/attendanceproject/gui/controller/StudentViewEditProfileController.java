@@ -82,6 +82,8 @@ public class StudentViewEditProfileController implements Initializable {
     private TableColumn<Klasse, String> timeCol;
     @FXML
     private TableColumn<Klasse, String> statusCol;
+    @FXML
+    private TextField totalAbsence;
 
     /**
      * Initializes the controller class.
