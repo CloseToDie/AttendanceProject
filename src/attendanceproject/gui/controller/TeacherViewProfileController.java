@@ -64,6 +64,8 @@ public class TeacherViewProfileController implements Initializable {
     private TableColumn<Student, String> fullNameCol;
     @FXML
     private TableColumn<Student, String> absenceCol;
+    @FXML
+    private Label headerUserNameLabel;
 
     /**
      * Initializes the controller class.
