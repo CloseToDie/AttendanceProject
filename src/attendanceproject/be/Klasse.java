@@ -10,7 +10,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 /**
  *
- * @author kacpe
+ * @author Aluminuminum
  */
 public class Klasse
 {
