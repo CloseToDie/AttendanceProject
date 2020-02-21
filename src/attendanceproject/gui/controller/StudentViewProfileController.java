@@ -54,8 +54,6 @@ public class StudentViewProfileController implements Initializable {
     @FXML
     private ImageView ProfileImageDisplay;
     @FXML
-    private Button editYourProfileButton;
-    @FXML
     private TableView<Klasse> classTable;
     @FXML
     private BorderPane chartsBorderPane;
@@ -72,7 +70,7 @@ public class StudentViewProfileController implements Initializable {
     @FXML
     private TableColumn<Klasse, String> statusCol;
     @FXML
-    private TextField totalAbsence;
+    private Label totalAbsence;
     
     private String absence;
     @FXML
@@ -163,7 +161,6 @@ public class StudentViewProfileController implements Initializable {
         
     }
 
-    @FXML
     private void handleEditButton(ActionEvent event) throws IOException
     {
        
@@ -186,7 +183,7 @@ public class StudentViewProfileController implements Initializable {
     private void handleDatePicker(MouseEvent event)
     {
          try {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/fullCalendar.fxml"));
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/FullCalendar.fxml"));
            
            Stage  primaryStage = new Stage();
            
