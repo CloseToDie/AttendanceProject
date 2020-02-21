@@ -43,6 +43,8 @@ Here I make the anchorpane white since the defualt grey color does not match the
 .column
 {
     -fx-background-color: #FFFFFF;
+    -fx-border-color: #969696;
+    
 }
 
 .biglabel
@@ -51,14 +53,7 @@ Here I make the anchorpane white since the defualt grey color does not match the
 }
 
 #TableViewStudents{
-    
-     -fx-background-color: #FFFFFF, -fx-control-inner-background;
+     -fx-background-color: #969696, -fx-control-inner-background;
     -fx-background-insets: 0, 1;
     -fx-padding: 1;
-    
-    
-    
-    
-    
-    
 }

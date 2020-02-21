@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,58 +21,58 @@
                   <Image url="@../../resources/img/logo.png" />
                </image>
             </ImageView>
-            <Label fx:id="logoutButton" layoutX="1083.0" layoutY="53.0" onMouseClicked="#handleLogout" text="Logout" textFill="WHITE" translateX="650.0">
+            <Label fx:id="logoutButton" layoutX="1100.0" layoutY="53.0" onMouseClicked="#handleLogout" text="Logout" textFill="WHITE" translateX="650.0">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
             </Label>
-            <FontAwesomeIcon fill="WHITE" iconName="LOCK" layoutX="1164.0" layoutY="70.0" translateX="650.0" />
+            <FontAwesomeIcon fill="WHITE" iconName="LOCK" layoutX="1187.0" layoutY="76.0" size="2em" translateX="650.0" />
          </children></Pane>
    </top>
    <left>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="326.0" styleClass="AnchorPane" translateX="48.0" BorderPane.alignment="CENTER">
          <children>
-             <Label layoutX="92.0" layoutY="47.0" text="default user name">
+             <Label layoutX="96.0" layoutY="47.0" text="anton066b">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="135.0" text="default username">
+      <Label layoutX="18.0" layoutY="253.0" text="anton066b">
+         <font>
+            <Font name="Microsoft Sans Serif" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="218.0" styleClass="biglabel" text="Username:" textFill="#404040">
+         <font>
+            <Font name="Arial" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="345.0" text="Antoni Bujko">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="100.0" styleClass="biglabel" text="Username:">
+      <Label layoutX="14.0" layoutY="310.0" styleClass="biglabel" text="Full Name:">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="235.0" text="default full name">
+      <Label layoutX="14.0" layoutY="434.0" prefHeight="21.0" prefWidth="280.0" text="Junier Street 28, ">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="200.0" styleClass="biglabel" text="Full Name:">
+      <Label layoutX="14.0" layoutY="399.0" styleClass="biglabel" text="Address:">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="335.0" prefWidth="114.0" text="default addres">
+      <Label layoutX="15.0" layoutY="542.0" text="antonibujko@hotmail.com">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="300.0" styleClass="biglabel" text="Address:">
-         <font>
-            <Font name="Microsoft Sans Serif" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="14.0" layoutY="435.0" text="default email:">
-         <font>
-            <Font name="Microsoft Sans Serif" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="14.0" layoutY="400.0" styleClass="biglabel" text="Email:">
+      <Label layoutX="14.0" layoutY="507.0" styleClass="biglabel" text="Email:">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>
@@ -84,36 +82,40 @@
             <Image url="@../../resources/img/profile-image.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="279.0" layoutY="767.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resources/img/user-edit-solid.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="14.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default postcode">
+      <Label layoutX="14.0" layoutY="456.0" prefHeight="22.0" prefWidth="50.0" text="8799,">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="357.0" prefHeight="22.0" prefWidth="139.0" text="default city">
+      <Label layoutX="63.0" layoutY="456.0" prefHeight="22.0" prefWidth="139.0" text="Junee">
          <font>
             <Font name="Microsoft Sans Serif" size="18.0" />
          </font>
       </Label>
-            <Button id="editProfileButton" fx:id="editYourProfileButton" layoutX="136.0" layoutY="767.0" mnemonicParsing="false" onAction="#handleEditButton" stylesheets="@css/StudentViewProfile.css" text="Edit your profile info" />
+            <Label layoutX="18.0" layoutY="128.0" prefHeight="32.0" prefWidth="285.0" text="Total Absence:">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="165.0" text="20%">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="19.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
      
    </left>
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" translateY="50.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="1446.0" styleClass="AnchorPane" translateX="110.0" translateY="100.0">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="1440.0" styleClass="AnchorPane" translateX="110.0" translateY="100.0">
                <children>
                   <Label id="YourAttendanceLabel" layoutX="24.0" layoutY="19.0" text="Your attendance">
                      <font>
                         <Font name="Arial" size="31.0" />
                      </font>
                   </Label>
-                  <Label id="CurrentDateLabel" fx:id="currentDateLabel" layoutX="1255.0" layoutY="22.0" onMouseClicked="#handleDatePicker" text="21-02-2020">
+                  <Label id="CurrentDateLabel" fx:id="currentDateLabel" layoutX="1255.0" layoutY="24.0" onMouseClicked="#handleDatePicker" text="21-02-2020">
                      <font>
                         <Font name="Arial" size="18.0" />
                      </font>
@@ -123,21 +125,15 @@
                         <Image url="@../../resources/img/calendar-alt-solid.png" />
                      </image>
                   </ImageView>
-                  <Label id="YourAttendanceLabel" layoutX="492.0" layoutY="14.0" text="total percentage of absence:">
-                     <font>
-                        <Font name="Arial" size="31.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="totalAbsence" layoutX="895.0" layoutY="15.0" prefHeight="35.0" prefWidth="149.0" />
                </children>
             </AnchorPane>
             <BorderPane fx:id="chartsBorderPane" layoutX="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="850.0" translateY="161.0" />
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="698.0" styleClass="AnchorPane" translateX="110.0" translateY="-360.0">
                <children>
-                  <TableView id="TableViewStudents" fx:id="classTable" layoutX="60.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleSetAbsence" prefHeight="370.0" prefWidth="578.0" styleClass="TableView">
+                  <TableView id="TableViewStudents" fx:id="classTable" layoutX="92.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleSetAbsence" prefHeight="345.0" prefWidth="528.0" styleClass="TableView">
                     <columns>
                       <TableColumn fx:id="classCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Class" />
-                      <TableColumn fx:id="timeCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Time" />
+                      <TableColumn fx:id="timeCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Date" />
                         <TableColumn fx:id="statusCol" prefWidth="75.0" style="-fx-font-size: 19;" styleClass="column" text="Status" />
                     </columns>
                      <columnResizePolicy>
