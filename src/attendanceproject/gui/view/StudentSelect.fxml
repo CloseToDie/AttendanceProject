@@ -33,7 +33,7 @@
          <children>
             <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" style="-fx-border-color: #707070; -fx-border-radius: 6px;">
                <children>
-                  <RadioButton contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" selected="true" styleClass="radioButton">
+                  <RadioButton fx:id="presentButton" contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" styleClass="radioButton">
                      <toggleGroup>
                         <ToggleGroup fx:id="toggleAbsence" />
                      </toggleGroup>
@@ -50,7 +50,7 @@
             </Pane>
             <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" style="-fx-border-color: #707070; -fx-border-radius: 6px;">
                <children>
-                  <RadioButton contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" styleClass="radioButton" toggleGroup="$toggleAbsence" />
+                  <RadioButton fx:id="absentButton" contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" styleClass="radioButton" toggleGroup="$toggleAbsence" />
                   <Label layoutX="13.0" layoutY="6.0" text="Absent" textFill="#707070">
                      <font>
                         <Font size="18.0" />
@@ -63,7 +63,7 @@
             </Pane>
             <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" style="-fx-border-color: #707070; -fx-border-radius: 6px;">
                <children>
-                  <RadioButton contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" styleClass="radioButton" toggleGroup="$toggleAbsence" />
+                  <RadioButton fx:id="notSetButton" contentDisplay="RIGHT" layoutX="171.0" layoutY="8.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="21.0" selected="true" styleClass="radioButton" toggleGroup="$toggleAbsence" />
                   <Label layoutX="13.0" layoutY="6.0" text="Not set" textFill="#707070">
                      <font>
                         <Font size="18.0" />
@@ -86,7 +86,7 @@
    <bottom>
       <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="250.0" BorderPane.alignment="CENTER">
          <children>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: #FBBB2C; -fx-border-radius: 7px; -fx-border-color: #FBBB2C;" text="CONFIRM" textFill="#707070">
+            <Button fx:id="confirmButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleconfirm" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: #FBBB2C; -fx-border-radius: 7px; -fx-border-color: #FBBB2C;" text="CONFIRM" textFill="#707070">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -94,7 +94,7 @@
                   <Insets left="25.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: #FBBB2C; -fx-border-radius: 7px; -fx-border-color: #FBBB2C;" text="CANCEL" textFill="#707070">
+            <Button fx:id="cancelbutton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCancel" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: #FBBB2C; -fx-border-radius: 7px; -fx-border-color: #FBBB2C;" text="CANCEL" textFill="#707070">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>

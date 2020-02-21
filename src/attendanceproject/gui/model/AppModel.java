@@ -181,6 +181,34 @@ public class AppModel
     {
         this.StudSelectCon = StudSelectCon;
     }
+    public void updateklasse(Klasse klasse){
+        
+        ArrayList<Klasse> classes = new ArrayList<>();
+        
+        classes.addAll(allClasses);
+        
+        for (Klasse classe : allClasses) {
+            
+            System.out.println(classe);
+            
+        }
+        
+        System.out.println("#####################################################################################################");
+        
+        classes.set(klasse.getId(), klasse);
+        
+        for (Klasse classe : classes) {
+            
+            System.out.println(classe);
+            
+        }
+    
+    
+        allClasses.clear();
+        allClasses.addAll(classes);
+    
+    }
+    
     
     
     

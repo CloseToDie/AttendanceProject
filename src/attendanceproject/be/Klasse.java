@@ -74,7 +74,7 @@ public class Klasse
     @Override
     
     public String toString() {
-        return getClassName()+ "  " + getTime()+ "  " + getStatus();
+        return getId()+ "  " + getClassName()+ "  " + getTime()+ "  " + getStatus();
     }
     
 }

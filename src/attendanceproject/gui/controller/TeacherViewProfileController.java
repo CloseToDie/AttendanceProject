@@ -163,7 +163,29 @@ public class TeacherViewProfileController implements Initializable {
         
         if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
             if(mouseEvent.getClickCount() == 2){
-                System.out.println("Double clicked");
+                try {
+                    System.out.println("Double clicked");
+                    
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/Teacherversion.fxml"));
+                    
+                    Scene scene = new Scene(loader.load());
+                    Stage stage = new Stage();
+                    stage.setScene(scene);
+                    stage.setResizable(false);
+                    
+                    StudentViewProfileControllerTeacherversion controller = loader.getController();
+                    
+                    controller.setTotalAbsence(studentTable.getSelectionModel().getSelectedItem().getAbsence());
+                    
+                    stage.show(); 
+                    close();
+                    
+                    
+                } catch (IOException ex) {
+                    Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
             }
         
         

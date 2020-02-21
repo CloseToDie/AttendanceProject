@@ -32,7 +32,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -44,7 +43,7 @@ import javafx.stage.Stage;
  *
  * @author Aluminuminum
  */
-public class StudentViewProfileController implements Initializable {
+public class StudentViewProfileControllerTeacherversion implements Initializable {
     
     
     
@@ -53,8 +52,6 @@ public class StudentViewProfileController implements Initializable {
     private BorderPane BorderPane;
     @FXML
     private ImageView ProfileImageDisplay;
-    @FXML
-    private Button editYourProfileButton;
     @FXML
     private TableView<Klasse> classTable;
     @FXML
@@ -75,6 +72,8 @@ public class StudentViewProfileController implements Initializable {
     private TextField totalAbsence;
     
     private String absence;
+    @FXML
+    private Button backtomainpage;
 
     /**
      * Initializes the controller class.
@@ -107,12 +106,6 @@ public class StudentViewProfileController implements Initializable {
        chartsBorderPane.setCenter(buildBarCHart());
        
        totalAbsence.setText(absence);
-       
-       if( absence == null || absence.isEmpty()) {
-       
-        totalAbsence.setText("20%");
-       
-       }
     }    
     
     private BarChart buildBarCHart()
@@ -142,7 +135,6 @@ public class StudentViewProfileController implements Initializable {
         
     }
 
-    @FXML
     private void handleEditButton(ActionEvent event) throws IOException
     {
        
@@ -210,39 +202,29 @@ public class StudentViewProfileController implements Initializable {
     }
 
     @FXML
-    private void handleSetAbsence(MouseEvent mouseEvent) {
+    private void handlebacktomainpage(ActionEvent event) {
         
-          if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
-            if(mouseEvent.getClickCount() == 2){
-                try {
-                    System.out.println("Double clicked");
-                    
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/attendanceproject/gui/view/StudentSelect.fxml"));
-                    
-                    Scene scene = new Scene(loader.load());
-                    Stage stage = new Stage();
-                    stage.setScene(scene);
-                    stage.setResizable(false);
-                    
-                    StudentSelectController controller = loader.getController();
-                    
-                    controller.setklasse(classTable.getSelectionModel().getSelectedItem());
-                    controller.setAppModel(appmodel);
-                    stage.show(); 
-                  
-                    
-                    
-                } catch (IOException ex) {
-                    Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
-                }
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/attendanceproject/gui/view/TeacherViewProfile.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show(); 
+            close();
+        } catch (IOException ex) {
+            Logger.getLogger(StudentViewProfileControllerTeacherversion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
         
         
     }
-          }
     
     
     
-    }
+    
+    
     
     
     
