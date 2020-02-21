@@ -20,7 +20,7 @@ import javafx.collections.ObservableList;
 
 /**
  *
- * @author kacpe
+ * @author Aluminuminum
  */
 public class AppModel
 {

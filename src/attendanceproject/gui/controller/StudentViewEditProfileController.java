@@ -41,7 +41,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author andreasvillumsen
+ * @author Aluminuminum
  */
 public class StudentViewEditProfileController implements Initializable {
     
