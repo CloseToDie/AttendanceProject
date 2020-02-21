@@ -36,7 +36,7 @@
    <left>
       <AnchorPane layoutX="48.0" layoutY="203.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="326.0" styleClass="AnchorPane" translateX="48.0" BorderPane.alignment="CENTER">
          <children>
-             <Label layoutX="92.0" layoutY="47.0" text="defualt user name">
+             <Label fx:id="headerUserNameLabel" layoutX="92.0" layoutY="47.0" text="defualt user name">
          <font>
             <Font name="Microsoft Sans Serif" size="24.0" />
          </font>

@@ -74,6 +74,20 @@ public class StudentViewProfileControllerTeacherversion implements Initializable
     private String absence;
     @FXML
     private Button backtomainpage;
+    @FXML
+    private Label headerUserNameLabel;
+    @FXML
+    private Label userNameLabel;
+    @FXML
+    private Label fullNameLabel;
+    @FXML
+    private Label addresLabel;
+    @FXML
+    private Label emailLabel;
+    @FXML
+    private Label postCodeLabel;
+    @FXML
+    private Label cityLabel;
 
     /**
      * Initializes the controller class.
@@ -99,6 +113,13 @@ public class StudentViewProfileControllerTeacherversion implements Initializable
         {
             appmodel = new AppModel();
             classTable.setItems(appmodel.getAllClasses());
+            headerUserNameLabel.setText(appmodel.getAllStudents().get(0).getUserName());
+            fullNameLabel.setText(appmodel.getAllStudents().get(0).getFullName());
+            userNameLabel.setText(appmodel.getAllStudents().get(0).getUserName());
+            addresLabel.setText(appmodel.getAllStudents().get(0).getAddres());
+            cityLabel.setText(appmodel.getAllStudents().get(0).getCity());
+            postCodeLabel.setText(appmodel.getAllStudents().get(0).getPostCode());
+            emailLabel.setText(appmodel.getAllStudents().get(0).getEmail());
         } catch (Exception ex)
         {
             Logger.getLogger(TeacherViewProfileController.class.getName()).log(Level.SEVERE, null, ex);
